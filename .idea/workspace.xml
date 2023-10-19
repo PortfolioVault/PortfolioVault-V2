@@ -1,18 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="PortfolioVault-V2:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="" />
+    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/exceptions/EmailAlreadyTakenException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Experience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/MongoDBConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/UserServiceEJB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/session/UserSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/SignupBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/EducationForm.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/addExperience.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/signup.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/Experience-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/home-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/landingPage-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/profil-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/signup-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
 }]]></component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2WWxnyV601txhrIkDrI7mMJYm8I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,7 +72,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Zakaria/IdeaProjects/PortfolioVault-V2",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Zakaria/IdeaProjects/PortfolioVault-V2/src/main/java/com/example/portfoliovaultv2/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -32,6 +81,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\views" />
+      <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\webapp" />
+      <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\models" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="GlassFish 7.0.8" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.8" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/PortfolioVault-V2-1.0-SNAPSHOT" />
@@ -52,6 +108,21 @@
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="9009" />
       </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -68,8 +139,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696862320098</updated>
-      <workItem from="1696862321763" duration="513000" />
+      <workItem from="1696862321763" duration="851000" />
+      <workItem from="1697732667714" duration="5495000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1696862903674</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696862903674</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,5 +166,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
