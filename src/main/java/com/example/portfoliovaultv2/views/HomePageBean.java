@@ -1,23 +1,29 @@
 package com.example.portfoliovaultv2.views;
 
 
-
+import com.example.portfoliovaultv2.models.Experience;
 import com.example.portfoliovaultv2.models.User;
+import com.example.portfoliovaultv2.services.ExperienceServiceEJB;
 import com.example.portfoliovaultv2.services.UserServiceEJB;
 import com.example.portfoliovaultv2.session.UserSession;
-import jakarta.annotation.PostConstruct;
+import jakarta.faces.application.FacesMessage;
+import jakarta.faces.context.ExternalContext;
+import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
+import java.io.IOException;
 import java.io.Serializable;
-import java.util.logging.Logger;
+import java.util.LinkedList;
 
 @Named
 @ViewScoped
 public class HomePageBean implements Serializable {
     @Inject
     private UserServiceEJB userServiceEJB;
+    @Inject
+    private ExperienceServiceEJB experienceServiceEJB;
     @Inject
     private UserSession userSession;
     private String firstName;
@@ -27,14 +33,12 @@ public class HomePageBean implements Serializable {
     private String address;
     private String age;
     private String professionalTitle;
-    Logger logger = Logger.getLogger(HomePageBean.class.getName());
+    private LinkedList<Experience> experiences = new LinkedList<>();
 
 
-    @PostConstruct
-    public void init() {
+    public void fetchUser() {
         // Initialize properties using values from UserSessionBean
         User user = userServiceEJB.findUserByEmail(userSession.getEmail());
-        logger.info(user.toString());
         this.firstName = user.getFirstName();
         this.lastName = user.getLastName();
         this.email = userSession.getEmail();
@@ -42,6 +46,38 @@ public class HomePageBean implements Serializable {
         this.age = user.getAge() != null ? user.getAge() : "";
         this.professionalTitle = user.getProfessionalTitle() != null ? user.getProfessionalTitle() : "";
         this.phoneNumber = user.getPhoneNumber() != null ? user.getPhoneNumber() : "";
+//        this.experiences = experienceServiceEJB.getExperiences(userSession.getEmail());
+    }
+
+    public void logout(){
+        userSession.setEmail("");
+        this.email = "";
+        this.lastName = "";
+        this.firstName = "";
+        this.address = "";
+        this.age = "";
+        this.phoneNumber = "";
+        this.professionalTitle = "";
+        this.experiences = null;
+        FacesContext context = FacesContext.getCurrentInstance();
+        ExternalContext externalContext = context.getExternalContext();
+        try {
+            externalContext.redirect(externalContext.getRequestContextPath() + "/signup.xhtml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void savePersonalInfos(){
+        FacesContext context = FacesContext.getCurrentInstance();
+        try{
+            userServiceEJB.savePersonalInfos(userSession.getEmail(), phoneNumber,age,professionalTitle,address);
+            FacesMessage message = new FacesMessage("Success", "Infos saved successfully");
+            context.addMessage(null, message);
+        }catch (Exception exception){
+            FacesMessage message = new FacesMessage("Something went wrong", "An error has occured");
+            context.addMessage(null, message);
+        }
     }
 
     public String getFirstName() {
@@ -100,7 +136,11 @@ public class HomePageBean implements Serializable {
         this.professionalTitle = professionalTitle;
     }
 
-    public void savePersonalInfos(){
+    public LinkedList<Experience> getExperiences() {
+        return experiences;
+    }
 
+    public void setExperiences(LinkedList<Experience> experiences) {
+        this.experiences = experiences;
     }
 }

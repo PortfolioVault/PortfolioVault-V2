@@ -131,3 +131,11 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.logout-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: start;
+    margin: 2rem 1rem;
+}

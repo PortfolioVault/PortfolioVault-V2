@@ -55,4 +55,14 @@ public class Experience {
         document.append("role", this.role);
         return document;
     }
+
+    public static Experience documentToExperience(Document document){
+        if(document == null){
+            return null;
+        }
+        return new Experience(document.getString("startDate"),
+                                        document.getString("endDate"),
+                                        document.getString("company"),
+                                        document.getString("role") );
+    }
 }

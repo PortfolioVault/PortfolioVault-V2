@@ -8,7 +8,6 @@ import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
-import org.bson.BsonValue;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -62,7 +61,7 @@ public class SignupBean implements Serializable {
     private UserServiceEJB userService;
     public String signup() {
         try{
-            BsonValue userId = userService.registerUser(firstName, lastName, email, password);
+            userService.registerUser(firstName, lastName, email, password);
             FacesContext context = FacesContext.getCurrentInstance();
             ExternalContext externalContext = context.getExternalContext();
            externalContext.redirect(externalContext.getRequestContextPath() + "/home.xhtml");

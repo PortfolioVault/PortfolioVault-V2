@@ -11,7 +11,15 @@
     <link rel="stylesheet" href="styles/home-styles.css"/>
 </head>
 <body>
-    <div class="section-container" id="personnal-infos">
+<f:metadata>
+    <f:event type="preRenderView" listener="#{homePageBean.fetchUser}" />
+</f:metadata>
+<div class="logout-container">
+    <h:form>
+       <h:commandButton value="Logout" styleClass="submit-btn" action="#{homePageBean.logout}"/>
+    </h:form>
+</div>
+<div class="section-container" id="personnal-infos">
         <h3 class="section-title">Personal Infos</h3>
         <h:messages globalOnly="true" layout="table" styleClass="flash-messages" />
         <h:form styleClass="form">
@@ -65,24 +73,24 @@
 <!--            <a href="EducationForm.xhtml" class="submit-btn">Add New</a>-->
 <!--        </div>-->
 <!--    </div>-->
-<!--    <div class="section-container">-->
-<!--        <h3 class="section-title">Your Work Experiences</h3>-->
-<!--        <c:if test="#{not empty userSessionBean.experiences}">-->
-<!--            <div class="cards-container">-->
-<!--                <ui:repeat value="#{userSessionBean.experiences}" var="experience">-->
-<!--                    <div class="card">-->
-<!--                        <h3>#{experience.role}</h3>-->
-<!--                        <p><strong>Company:</strong> #{experience.company}</p>-->
-<!--                        <p><strong>Start Date:</strong> #{experience.startDate}</p>-->
-<!--                        <p><strong>Finish Date:</strong> #{experience.endDate}</p>-->
-<!--                    </div>-->
-<!--                </ui:repeat>-->
-<!--            </div>-->
-<!--        </c:if>-->
-<!--        <div class="submit-container">-->
-<!--            <a href="addExperience.xhtml" class="submit-btn">Add New</a>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="section-container">
+        <h3 class="section-title">Your Work Experiences</h3>
+        <c:if test="#{not empty homePageBean.experiences}">
+            <div class="cards-container">
+                <ui:repeat value="#{homePageBean.experiences}" var="experience">
+                    <div class="card">
+                        <h3>#{experience.role}</h3>
+                        <p><strong>Company:</strong> #{experience.company}</p>
+                        <p><strong>Start Date:</strong> #{experience.startDate}</p>
+                        <p><strong>Finish Date:</strong> #{experience.endDate}</p>
+                    </div>
+                </ui:repeat>
+            </div>
+        </c:if>
+        <div class="submit-container">
+            <a href="addExperience.xhtml" class="submit-btn">Add New</a>
+        </div>
+    </div>
     <div class="submit-all-container">
         <a href="profil.xhtml" class="submit-btn">Preview</a>
     </div>

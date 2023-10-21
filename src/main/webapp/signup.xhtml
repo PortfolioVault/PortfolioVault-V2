@@ -9,8 +9,9 @@
 </head>
 <body>
 <h1 class="signup-heading">Sign Up</h1>
-<h:messages globalOnly="true" layout="table" styleClass="flash-messages" />
-<div class="form-container">
+<div class="flash-messages-container">
+    <h:messages globalOnly="true" layout="table" styleClass="flash-messages" />
+</div><div class="form-container">
 <h:form styleClass="form">
     <div class="form-control">
         <label for="firstName">First Name</label>
@@ -29,8 +30,12 @@
         <h:inputSecret id="password" value="#{signupBean.password}" placeholder="Password" />
     </div>
     <h:commandButton styleClass="submit-btn" value="Sign Up" action="#{signupBean.signup}" />
+    <div class="account-state-container">
+        <p>Already have an account? <a href="login.xhtml">Login</a></p>
+    </div>
 </h:form>
 </div>
+
 </body>
 </html>
 
