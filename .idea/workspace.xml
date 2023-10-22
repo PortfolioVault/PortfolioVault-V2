@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: add Education section">
+    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: add Education section and affichage in hom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
@@ -152,7 +151,7 @@
       <workItem from="1697796385809" duration="10650000" />
       <workItem from="1697884785297" duration="7322000" />
       <workItem from="1697921510411" duration="2974000" />
-      <workItem from="1697991170123" duration="12444000" />
+      <workItem from="1697991170123" duration="13607000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -177,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698009609962</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add Education section and affichage in hom">
+      <created>1698012769539</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1698012769539</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +204,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="feat: transformed user service to EJB" />
     <MESSAGE value="feat: add Education section" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Education section" />
+    <MESSAGE value="feat: add Education section and affichage in hom" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add Education section and affichage in hom" />
   </component>
 </project>

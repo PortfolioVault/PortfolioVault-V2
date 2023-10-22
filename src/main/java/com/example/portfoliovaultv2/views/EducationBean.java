@@ -47,17 +47,8 @@ public class EducationBean implements Serializable {
             context.addMessage(null, message);
         }
     }
-//    public void fetchEducation() {
-//        // Initialize properties using values from UserSessionBean
-//        Education education = educationService.find();
-//
-//        this.diplomat = userSession.getEmail();
-//        this.emailUser = education.getEmailUser() != null ? education.getEmailUser() : "";
-//        this.yearOfObtention = education.getYearOfObtention() != null ?  education.getYearOfObtention() : "";
-//        this.university = education.getUniversity() != null ? education.getUniversity() : "";
-//
-//    }
-    public Education getAllEducations(){
+
+    public List<Education> getAllEducations(){
        return educationService.getAllEducations();
     }
 

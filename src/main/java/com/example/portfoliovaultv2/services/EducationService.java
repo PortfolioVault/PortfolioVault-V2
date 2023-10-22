@@ -4,6 +4,7 @@ import com.example.portfoliovaultv2.models.Education;
 import com.example.portfoliovaultv2.models.MongoDBConnectionManager;
 import com.example.portfoliovaultv2.services.utils.DatabaseUtils;
 import com.example.portfoliovaultv2.session.UserSession;
+import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -13,6 +14,8 @@ import jakarta.inject.Inject;
 import org.bson.BsonValue;
 import org.bson.Document;
 
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Stateless
@@ -37,10 +40,16 @@ public class EducationService {
         InsertOneResult result = collection.insertOne(userDocument);
         return result.getInsertedId();
     }
-    public Education getAllEducations(){
-        Document educations =  collection.find().first();
-        System.out.println("la data education get from db "+educations.toString());
-        return Education.documentToEducation(educations);
+    public List<Education> getAllEducations(){
+        FindIterable<Document> educations =  collection.find();
+        List<Education> educationList = new ArrayList<>();
+
+        for (Document document : educations) {
+            // Convertir chaque document en objet Education et l'ajouter à la liste
+            Education education = Education.documentToEducation(document);
+            educationList.add(education);
+        }
+        return educationList;
     }
 
 }
