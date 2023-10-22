@@ -10,21 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: transformed user service to EJB">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/ExperienceServiceEJB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/utils/DatabaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/LoginBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Experience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/UserServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/UserServiceEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/SignupBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/SignupBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/signup.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/home-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/home-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/signup-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/signup-styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +33,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -52,30 +40,25 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
-}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2WWxnyV601txhrIkDrI7mMJYm8I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zakaria/IdeaProjects/PortfolioVault-V2/src/main/java/com/example/portfoliovaultv2/services&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\services" />
@@ -170,6 +153,7 @@
       <workItem from="1697796385809" duration="10650000" />
       <workItem from="1697884785297" duration="7322000" />
       <workItem from="1697921510411" duration="2974000" />
+      <workItem from="1697991170123" duration="9774000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
