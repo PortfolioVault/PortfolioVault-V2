@@ -20,12 +20,7 @@ public class Education {
 //
 
         return education;
-//
-//        this.diplomat = userSession.getEmail();
-//        this.emailUser = education.getEmailUser() != null ? education.getEmailUser() : "";
-//        this.yearOfObtention = education.getYearOfObtention() != null ?  education.getYearOfObtention() : "";
-//        this.university = education.getUniversity() != null ? education.getUniversity() : "";
-//
+
     }
 
     public String getDiplomat() {

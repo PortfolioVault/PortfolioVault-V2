@@ -2,7 +2,6 @@ package com.example.portfoliovaultv2.services;
 
 import com.example.portfoliovaultv2.models.Education;
 import com.example.portfoliovaultv2.models.MongoDBConnectionManager;
-import com.example.portfoliovaultv2.models.User;
 import com.example.portfoliovaultv2.services.utils.DatabaseUtils;
 import com.example.portfoliovaultv2.session.UserSession;
 import com.mongodb.client.MongoClient;
@@ -14,7 +13,6 @@ import jakarta.inject.Inject;
 import org.bson.BsonValue;
 import org.bson.Document;
 
-import static com.mongodb.client.model.Filters.eq;
 
 
 @Stateless
@@ -23,9 +21,6 @@ public class EducationService {
     private final MongoCollection<Document> collection = DatabaseUtils.getCollection(COLLECTION_NAME);
     private static String DB_NAME = "PortfolioVault";
 
-
-    @Inject
-    private UserSession userSession;
 
     public BsonValue addEducation(String emailUser, String diplomat, String university, String yearOfObtention) {
         MongoClient mongoClient = MongoDBConnectionManager.getMongoClient();
@@ -42,9 +37,10 @@ public class EducationService {
         InsertOneResult result = collection.insertOne(userDocument);
         return result.getInsertedId();
     }
-    public Education getAllEducations(String email){
-        Document Educations =  collection.find().first();
-        return Education.documentToEducation(Educations);
+    public Education getAllEducations(){
+        Document educations =  collection.find().first();
+        System.out.println("la data education get from db "+educations.toString());
+        return Education.documentToEducation(educations);
     }
 
 }

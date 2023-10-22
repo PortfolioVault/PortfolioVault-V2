@@ -14,6 +14,7 @@ import jakarta.inject.Named;
 
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.List;
 
 @Named
 @ViewScoped
@@ -56,6 +57,9 @@ public class EducationBean implements Serializable {
 //        this.university = education.getUniversity() != null ? education.getUniversity() : "";
 //
 //    }
+    public Education getAllEducations(){
+       return educationService.getAllEducations();
+    }
 
     public String getDiplomat() {
         return diplomat;
