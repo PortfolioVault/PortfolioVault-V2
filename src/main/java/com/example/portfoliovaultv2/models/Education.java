@@ -1,10 +1,27 @@
 package com.example.portfoliovaultv2.models;
 
+import org.bson.Document;
+
 public class Education {
     private String diplomat;
     private String university;
     private String yearOfObtention;
-    private String idUser;
+    private String emailUser;
+
+    public static Education documentToEducation(Document document){
+        if(document == null){
+            return null;
+        }
+        Education education = new Education(document.getString("university"),document.getString("diplomat"), document.getString("yearOfObtention"), document.getString("emailUser"));
+//        education.university =  document.getString("university");
+//        education.diplomat = document.getString("diplomat");
+//        education.yearOfObtention = document.getString("yearOfObtention");
+//        education.emailUser =  document.getString("emailUser");
+//
+
+        return education;
+
+    }
 
     public String getDiplomat() {
         return diplomat;
@@ -34,14 +51,14 @@ public class Education {
         this.diplomat = diplomat;
         this.university = university;
         this.yearOfObtention = yearOfObtention;
-        this.idUser = idUser;
+        this.emailUser = idUser;
     }
 
-    public String getIdUser() {
-        return idUser;
+    public String getEmailUser() {
+        return emailUser;
     }
 
-    public void setIdUser(String idUser) {
-        this.idUser = idUser;
+    public void setEmailUser(String idUser) {
+        this.emailUser = idUser;
     }
 }

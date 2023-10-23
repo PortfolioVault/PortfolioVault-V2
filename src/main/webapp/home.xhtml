@@ -56,24 +56,25 @@
             </div>
         </h:form>
     </div>
-<!--    <div class="section-container">-->
-<!--        <h3 class="section-title">Your Educational Background</h3>-->
-<!--        <c:if test="#{not empty userSessionBean.educations}">-->
-<!--            <div class="cards-container">-->
-<!--                <ui:repeat value="#{userSessionBean.educations}" var="education">-->
-<!--                    <div class="card">-->
-<!--                        <h3>#{education.diplomat}</h3>-->
-<!--                        <p><strong>University:</strong> #{education.university}</p>-->
-<!--                        <p><strong>Year of obtention:</strong> #{education.yearOfObtention}</p>-->
-<!--                    </div>-->
-<!--                </ui:repeat>-->
-<!--            </div>-->
-<!--        </c:if>-->
-<!--        <div class="submit-container">-->
-<!--            <a href="EducationForm.xhtml" class="submit-btn">Add New</a>-->
-<!--        </div>-->
-<!--    </div>-->
     <div class="section-container">
+        <h3 class="section-title">Your Educational Background</h3>
+        <c:if test="#{not empty educationBean.allEducations}">
+            <div class="cards-container">
+                <ui:repeat value="#{educationBean.allEducations}" var="education">
+                    <div class="card">
+                        <h3>#{education.diplomat}</h3>
+                        <p><strong>University:</strong> #{education.university}</p>
+                        <p><strong>Year of obtention:</strong> #{education.yearOfObtention}</p>
+                    </div>
+                </ui:repeat>
+            </div>
+        </c:if>
+        <div class="submit-container">
+            <a href="EducationForm.xhtml" class="submit-btn">Add New</a>
+        </div>
+    </div>
+
+<div class="section-container">
         <h3 class="section-title">Your Work Experiences</h3>
         <c:if test="#{not empty homePageBean.experiences}">
             <div class="cards-container">
