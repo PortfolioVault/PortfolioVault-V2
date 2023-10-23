@@ -75,9 +75,9 @@
 <!--    </div>-->
     <div class="section-container">
         <h3 class="section-title">Your Work Experiences</h3>
-        <c:if test="#{not empty homePageBean.experiences}">
+        <c:if test="#{not empty experienceBean.allExperiences}">
             <div class="cards-container">
-                <ui:repeat value="#{homePageBean.experiences}" var="experience">
+                <ui:repeat value="#{experienceBean.allExperiences}" var="experience">
                     <div class="card">
                         <h3>#{experience.role}</h3>
                         <p><strong>Company:</strong> #{experience.company}</p>

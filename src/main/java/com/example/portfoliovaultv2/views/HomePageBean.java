@@ -20,6 +20,8 @@ import java.util.LinkedList;
 @Named
 @ViewScoped
 public class HomePageBean implements Serializable {
+
+
     @Inject
     private UserServiceEJB userServiceEJB;
     @Inject
@@ -33,7 +35,7 @@ public class HomePageBean implements Serializable {
     private String address;
     private String age;
     private String professionalTitle;
-    private LinkedList<Experience> experiences = new LinkedList<>();
+    private LinkedList<Experience> experiences;
 
 
     public void fetchUser() {
@@ -46,7 +48,7 @@ public class HomePageBean implements Serializable {
         this.age = user.getAge() != null ? user.getAge() : "";
         this.professionalTitle = user.getProfessionalTitle() != null ? user.getProfessionalTitle() : "";
         this.phoneNumber = user.getPhoneNumber() != null ? user.getPhoneNumber() : "";
-//        this.experiences = experienceServiceEJB.getExperiences(userSession.getEmail());
+        this.experiences = experienceServiceEJB.getExperiences(userSession.getEmail());
     }
 
     public void logout(){

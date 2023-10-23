@@ -11,6 +11,7 @@ import jakarta.inject.Inject;
 import org.bson.Document;
 
 import java.util.Objects;
+import java.util.logging.Logger;
 
 import static com.mongodb.client.model.Filters.eq;
 
@@ -18,6 +19,8 @@ import static com.mongodb.client.model.Filters.eq;
 public class UserServiceEJB {
     private static final String COLLECTION_NAME = "portfolios";
     private final MongoCollection<Document> collection = DatabaseUtils.getCollection(COLLECTION_NAME);
+
+    private Logger logger= Logger.getLogger(String.valueOf(UserServiceEJB.class));
 
     @Inject
     private UserSession userSession;
@@ -46,6 +49,7 @@ public class UserServiceEJB {
     }
 
     public boolean login(String email,String password){
+        logger.info("hola");
         User user = findUserByEmail(email);
         boolean loginResult = false;
         if(user != null && Objects.equals(user.getPassword(), password)){
