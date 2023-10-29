@@ -33,7 +33,8 @@
       <artifactId>jakarta.ejb-api</artifactId>
       <version>4.0.0</version>
       <scope>provided</scope>
-    </dependency><dependency>
+    </dependency>
+      <dependency>
       <groupId>jakarta.faces</groupId>
       <artifactId>jakarta.faces-api</artifactId>
       <version>3.0.0</version>

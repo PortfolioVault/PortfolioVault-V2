@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: transformed user service to EJB">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="fix: fixed the experiences not showing bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/ExperienceServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/ExperienceServiceEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/UserServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/UserServiceEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +27,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -53,6 +53,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -149,7 +150,14 @@
       <workItem from="1697884785297" duration="7322000" />
       <workItem from="1697921510411" duration="2974000" />
       <workItem from="1697997571736" duration="9313000" />
-      <workItem from="1698047239344" duration="3713000" />
+      <workItem from="1698047239344" duration="6773000" />
+      <workItem from="1698165571159" duration="725000" />
+      <workItem from="1698433531810" duration="771000" />
+      <workItem from="1698434499887" duration="2304000" />
+      <workItem from="1698530162924" duration="3434000" />
+      <workItem from="1698567258975" duration="105000" />
+      <workItem from="1698570325816" duration="1720000" />
+      <workItem from="1698582621997" duration="7853000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -167,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697740865549</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: fixed the experiences not showing bug">
+      <created>1698051325209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698051325209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +202,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="feat: transformed user service to EJB" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: transformed user service to EJB" />
+    <MESSAGE value="fix: fixed the experiences not showing bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed the experiences not showing bug" />
   </component>
 </project>
