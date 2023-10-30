@@ -1,32 +1,33 @@
 package com.example.portfoliovaultv2.views;
 
-
 import com.example.portfoliovaultv2.models.Education;
 import com.example.portfoliovaultv2.models.Experience;
 import com.example.portfoliovaultv2.models.User;
+import com.example.portfoliovaultv2.services.EducationService;
 import com.example.portfoliovaultv2.services.ExperienceServiceEJB;
 import com.example.portfoliovaultv2.services.UserServiceEJB;
 import com.example.portfoliovaultv2.session.UserSession;
-import jakarta.faces.application.FacesMessage;
-import jakarta.faces.context.ExternalContext;
-import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
 
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.LinkedList;
+import java.util.List;
 
 @Named
 @ViewScoped
-public class HomePageBean implements Serializable {
+public class ProfilPageBean implements Serializable {
     @Inject
     private UserServiceEJB userServiceEJB;
     @Inject
     private ExperienceServiceEJB experienceServiceEJB;
     @Inject
+    private EducationService educationService;
+    @Inject
     private UserSession userSession;
+
+
     private String firstName;
     private String lastName;
     private String email;
@@ -37,7 +38,8 @@ public class HomePageBean implements Serializable {
     private LinkedList<Experience> experiences = new LinkedList<>();
     private LinkedList<Education> educations = new LinkedList<>();
 
-    public void fetchUser() {
+
+    public void getUser() {
         // Initialize properties using values from UserSessionBean
         User user = userServiceEJB.findUserByEmail(userSession.getEmail());
         this.firstName = user.getFirstName();
@@ -48,45 +50,6 @@ public class HomePageBean implements Serializable {
         this.professionalTitle = user.getProfessionalTitle() != null ? user.getProfessionalTitle() : "";
         this.phoneNumber = user.getPhoneNumber() != null ? user.getPhoneNumber() : "";
 //        this.experiences = experienceServiceEJB.getExperiences(userSession.getEmail());
-    }
-
-    public void logout(){
-        userSession.setEmail("");
-        this.email = "";
-        this.lastName = "";
-        this.firstName = "";
-        this.address = "";
-        this.age = "";
-        this.phoneNumber = "";
-        this.professionalTitle = "";
-        this.experiences = null;
-        FacesContext context = FacesContext.getCurrentInstance();
-        ExternalContext externalContext = context.getExternalContext();
-        try {
-            externalContext.redirect(externalContext.getRequestContextPath() + "/signup.xhtml");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public void savePersonalInfos(){
-        FacesContext context = FacesContext.getCurrentInstance();
-        try{
-            userServiceEJB.savePersonalInfos(userSession.getEmail(), phoneNumber,age,professionalTitle,address);
-            FacesMessage message = new FacesMessage("Success", "Infos saved successfully");
-            context.addMessage(null, message);
-        }catch (Exception exception){
-            FacesMessage message = new FacesMessage("Something went wrong", "An error has occured");
-            context.addMessage(null, message);
-        }
-    }
-
-    public LinkedList<Education> getEducations() {
-        return educations;
-    }
-
-    public void setEducations(LinkedList<Education> educations) {
-        this.educations = educations;
     }
 
     public String getFirstName() {
@@ -145,11 +108,20 @@ public class HomePageBean implements Serializable {
         this.professionalTitle = professionalTitle;
     }
 
-    public LinkedList<Experience> getExperiences() {
-        return experiences;
+    public List<Experience> getExperiences() {
+        return experienceServiceEJB.getExperiences(userSession.getEmail());
     }
 
     public void setExperiences(LinkedList<Experience> experiences) {
         this.experiences = experiences;
     }
+
+    public List<Education> getEducations() {
+        return educationService.getAllEducations();
+    }
+
+    public void setEducations(LinkedList<Education> educations) {
+        this.educations = educations;
+    }
 }
+
