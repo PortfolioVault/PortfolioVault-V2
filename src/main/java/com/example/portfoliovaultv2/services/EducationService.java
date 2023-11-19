@@ -8,14 +8,19 @@ import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
 import com.mongodb.client.result.InsertOneResult;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 import org.bson.BsonValue;
 import org.bson.Document;
+import org.bson.conversions.Bson;
+import org.bson.types.ObjectId;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.mongodb.client.model.Filters.eq;
 
 
 @Stateless
@@ -40,16 +45,28 @@ public class EducationService {
         InsertOneResult result = collection.insertOne(userDocument);
         return result.getInsertedId();
     }
-    public List<Education> getAllEducations(){
-        FindIterable<Document> educations =  collection.find();
+    public List<Education> getAllEducations(String email){
+        FindIterable<Document> educations =  collection.find(eq("emailUser",email));
         List<Education> educationList = new ArrayList<>();
-
         for (Document document : educations) {
             // Convertir chaque document en objet Education et l'ajouter à la liste
-            Education education = Education.documentToEducation(document);
+            Education education = documentToEducation(document);
             educationList.add(education);
         }
         return educationList;
+    }
+    public  Education documentToEducation(Document document){
+        if(document == null){
+            return null;
+        }
+        Education education = new Education(document.getString("university"),document.getString("diplomat"), document.getString("yearOfObtention"), document.getString("emailUser"));
+        education.setId(document.getObjectId("_id").toString());
+        return education;
+
+    }
+    public void deleteById(String id) {
+            Bson filter = Filters.eq("_id", new ObjectId(id));
+            collection.findOneAndDelete(filter);
     }
 
 }

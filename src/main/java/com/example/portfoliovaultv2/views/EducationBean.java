@@ -49,8 +49,10 @@ public class EducationBean implements Serializable {
     }
 
     public List<Education> getAllEducations(){
-       return educationService.getAllEducations();
+        return educationService.getAllEducations(userSession.getEmail());
     }
+    public void deleteById(String id){educationService.deleteById(id);}
+
 
     public String getDiplomat() {
         return diplomat;
