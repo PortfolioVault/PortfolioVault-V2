@@ -59,6 +59,7 @@
     <div class="section-container">
         <h3 class="section-title">Your Educational Background</h3>
         <c:if test="#{not empty educationBean.allEducations}">
+
             <div class="cards-container">
                 <ui:repeat value="#{educationBean.allEducations}" var="education">
                     <div class="card">

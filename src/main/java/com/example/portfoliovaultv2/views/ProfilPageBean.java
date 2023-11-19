@@ -1,3 +1,4 @@
+
 package com.example.portfoliovaultv2.views;
 
 import com.example.portfoliovaultv2.models.Education;
@@ -124,4 +125,5 @@ public class ProfilPageBean implements Serializable {
         this.educations = educations;
     }
 }
+
 
