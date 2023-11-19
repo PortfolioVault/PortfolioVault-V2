@@ -62,9 +62,15 @@
             <div class="cards-container">
                 <ui:repeat value="#{educationBean.allEducations}" var="education">
                     <div class="card">
+                        <p> ID: #{education.id}</p>
                         <h3>#{education.diplomat}</h3>
                         <p><strong>University:</strong> #{education.university}</p>
                         <p><strong>Year of obtention:</strong> #{education.yearOfObtention}</p>
+                        <h:form>
+                            <!-- Pass the education ID to your delete endpoint -->
+                            <input type="hidden" name="educationId" value="#{education.id}" />
+                            <h:commandButton value="Delete" action="#{educationBean.deleteById(education.id)}" />
+                        </h:form>
                     </div>
                 </ui:repeat>
             </div>
