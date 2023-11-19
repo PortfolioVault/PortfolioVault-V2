@@ -117,7 +117,7 @@ public class ProfilPageBean implements Serializable {
     }
 
     public List<Education> getEducations() {
-        return educationService.getAllEducations();
+        return educationService.getAllEducations(this.email);
     }
 
     public void setEducations(LinkedList<Education> educations) {

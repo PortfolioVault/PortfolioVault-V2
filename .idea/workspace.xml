@@ -10,19 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: transformed user service to EJB">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ExperienceBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/Profile_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Experience.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/ExperienceServiceEJB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/ExperienceServiceEJB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/HomePageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/profil-style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +51,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PortfolioVault" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -164,6 +157,7 @@
       <workItem from="1698255675098" duration="47000" />
       <workItem from="1698441937875" duration="4170000" />
       <workItem from="1698576088071" duration="13013000" />
+      <workItem from="1700413320226" duration="334000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
