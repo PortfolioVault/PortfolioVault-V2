@@ -49,7 +49,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../main/PortfolioVault-V2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DeleteEducation-PortoflioV2/PortfolioVault-V2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -153,6 +153,7 @@
       <workItem from="1697884785297" duration="7322000" />
       <workItem from="1697921510411" duration="2974000" />
       <workItem from="1697991170123" duration="13607000" />
+      <workItem from="1700405683328" duration="796000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
