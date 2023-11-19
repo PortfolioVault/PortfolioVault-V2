@@ -59,10 +59,10 @@
     <div class="section-container">
         <h3 class="section-title">Your Educational Background</h3>
         <c:if test="#{not empty educationBean.allEducations}">
+
             <div class="cards-container">
                 <ui:repeat value="#{educationBean.allEducations}" var="education">
                     <div class="card">
-                        <p> ID: #{education.id}</p>
                         <h3>#{education.diplomat}</h3>
                         <p><strong>University:</strong> #{education.university}</p>
                         <p><strong>Year of obtention:</strong> #{education.yearOfObtention}</p>
@@ -79,27 +79,26 @@
             <a href="EducationForm.xhtml" class="submit-btn">Add New</a>
         </div>
     </div>
-
 <div class="section-container">
-        <h3 class="section-title">Your Work Experiences</h3>
-        <c:if test="#{not empty homePageBean.experiences}">
-            <div class="cards-container">
-                <ui:repeat value="#{homePageBean.experiences}" var="experience">
-                    <div class="card">
-                        <h3>#{experience.role}</h3>
-                        <p><strong>Company:</strong> #{experience.company}</p>
-                        <p><strong>Start Date:</strong> #{experience.startDate}</p>
-                        <p><strong>Finish Date:</strong> #{experience.endDate}</p>
-                    </div>
-                </ui:repeat>
-            </div>
-        </c:if>
-        <div class="submit-container">
-            <a href="addExperience.xhtml" class="submit-btn">Add New</a>
+    <h3 class="section-title">Your Work Experiences</h3>
+    <c:if test="#{not empty experienceBean.allExperiences}">
+        <div class="cards-container">
+            <ui:repeat value="#{experienceBean.allExperiences}" var="experience">
+                <div class="card">
+                    <h3>#{experience.role}</h3>
+                    <p><strong>Company:</strong> #{experience.company}</p>
+                    <p><strong>Start Date:</strong> #{experience.startDate}</p>
+                    <p><strong>Finish Date:</strong> #{experience.endDate}</p>
+                </div>
+            </ui:repeat>
         </div>
+    </c:if>
+    <div class="submit-container">
+        <a href="addExperience.xhtml" class="submit-btn">Add New</a>
     </div>
-    <div class="submit-all-container">
-        <a href="profil.xhtml" class="submit-btn">Preview</a>
-    </div>
+</div>
+<div class="submit-all-container">
+    <a href="profil.xhtml" class="submit-btn">Preview</a>
+</div>
 </body>
 </html>

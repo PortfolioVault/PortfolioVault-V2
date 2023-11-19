@@ -101,4 +101,6 @@ public class EducationBean implements Serializable {
     public void setEducationService(EducationService educationService) {
         this.educationService = educationService;
     }
+
 }
+

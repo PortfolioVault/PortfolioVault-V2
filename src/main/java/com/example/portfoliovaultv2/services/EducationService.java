@@ -65,8 +65,10 @@ public class EducationService {
 
     }
     public void deleteById(String id) {
-            Bson filter = Filters.eq("_id", new ObjectId(id));
-            collection.findOneAndDelete(filter);
+
+        Bson filter = Filters.eq("_id", new ObjectId(id));
+        collection.findOneAndDelete(filter);
     }
 
 }
+

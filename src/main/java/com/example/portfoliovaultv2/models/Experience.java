@@ -61,8 +61,8 @@ public class Experience {
             return null;
         }
         return new Experience(document.getString("startDate"),
-                                        document.getString("endDate"),
-                                        document.getString("company"),
-                                        document.getString("role") );
+                document.getString("endDate"),
+                document.getString("company"),
+                document.getString("role") );
     }
 }

@@ -9,9 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: add Education section and affichage in hom">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+
+    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: transformed user service to EJB">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +38,14 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
+
   <component name="ProjectId" id="2WWxnyV601txhrIkDrI7mMJYm8I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -50,18 +54,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DeleteEducation-PortoflioV2/testMerge/PortfolioVault-V2" />
-=======
+
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
->>>>>>> origin/main
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+
+
+    <property name="nodejs_package_manager_path" value="npm" />
+
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -157,8 +155,14 @@
       <workItem from="1697796385809" duration="10650000" />
       <workItem from="1697884785297" duration="7322000" />
       <workItem from="1697921510411" duration="2974000" />
-      <workItem from="1697991170123" duration="13607000" />
-      <workItem from="1700405683328" duration="796000" />
+
+      <workItem from="1698051229167" duration="2157000" />
+      <workItem from="1698154412768" duration="977000" />
+      <workItem from="1698255675098" duration="47000" />
+      <workItem from="1698441937875" duration="4170000" />
+      <workItem from="1698576088071" duration="13013000" />
+      <workItem from="1700413320226" duration="334000" />
+
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />

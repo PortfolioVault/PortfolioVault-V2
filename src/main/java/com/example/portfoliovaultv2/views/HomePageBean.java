@@ -1,6 +1,7 @@
 package com.example.portfoliovaultv2.views;
 
 
+import com.example.portfoliovaultv2.models.Education;
 import com.example.portfoliovaultv2.models.Experience;
 import com.example.portfoliovaultv2.models.User;
 import com.example.portfoliovaultv2.services.ExperienceServiceEJB;
@@ -34,7 +35,7 @@ public class HomePageBean implements Serializable {
     private String age;
     private String professionalTitle;
     private LinkedList<Experience> experiences = new LinkedList<>();
-
+    private LinkedList<Education> educations = new LinkedList<>();
 
     public void fetchUser() {
         // Initialize properties using values from UserSessionBean
@@ -78,6 +79,14 @@ public class HomePageBean implements Serializable {
             FacesMessage message = new FacesMessage("Something went wrong", "An error has occured");
             context.addMessage(null, message);
         }
+    }
+
+    public LinkedList<Education> getEducations() {
+        return educations;
+    }
+
+    public void setEducations(LinkedList<Education> educations) {
+        this.educations = educations;
     }
 
     public String getFirstName() {
