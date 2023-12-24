@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: jmsinit">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/public/DeployingMERNapplication.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/public/pdf_4726010.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/activeMQ/SimpleQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/activeMQ/SimpleQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/entreprise/entrepriseBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/entreprise/entrepriseBeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/entreprise/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/home.xhtml" afterDir="false" />
-    </list>
+    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: jmsinit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -171,7 +168,7 @@
       <workItem from="1701684779328" duration="7142000" />
       <workItem from="1701787695041" duration="632000" />
       <workItem from="1702659428654" duration="120000" />
-      <workItem from="1703347619089" duration="24175000" />
+      <workItem from="1703347619089" duration="24670000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -210,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703413680419</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: jmsinit">
+      <created>1703430650425</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703430650425</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
