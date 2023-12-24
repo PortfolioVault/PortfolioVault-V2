@@ -9,20 +9,7 @@ public class Education {
     private String yearOfObtention;
     private String emailUser;
 
-//    public static Education documentToEducation(Document document){
-//        if(document == null){
-//            return null;
-//        }
-//        Education education = new Education(document.getString("university"),document.getString("diplomat"), document.getString("yearOfObtention"), document.getString("emailUser"));
-////        education.university =  document.getString("university");
-////        education.diplomat = document.getString("diplomat");
-////        education.yearOfObtention = document.getString("yearOfObtention");
-////        education.emailUser =  document.getString("emailUser");
-////
-//
-//        return education;
-//
-//    }
+
 
     public String getDiplomat() {
         return diplomat;

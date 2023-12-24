@@ -9,15 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: transformed user service to EJB">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/activeMQ/SimpleQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/entreprise/entrepriseBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/home.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/login.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/signup.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/services/EducationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/EducationBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +44,11 @@
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-
   <component name="ProjectId" id="2WWxnyV601txhrIkDrI7mMJYm8I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,15 +57,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-
-
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/entreprise" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="xml.catalog" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\S5\benHaddy\fatiPortFV2\PortfolioVault-V2\src\main\webapp\entreprise" />
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\services" />
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\views" />
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\webapp" />
@@ -155,14 +163,17 @@
       <workItem from="1697796385809" duration="10650000" />
       <workItem from="1697884785297" duration="7322000" />
       <workItem from="1697921510411" duration="2974000" />
-
       <workItem from="1698051229167" duration="2157000" />
       <workItem from="1698154412768" duration="977000" />
       <workItem from="1698255675098" duration="47000" />
       <workItem from="1698441937875" duration="4170000" />
       <workItem from="1698576088071" duration="13013000" />
       <workItem from="1700413320226" duration="334000" />
-
+      <workItem from="1701615788891" duration="3132000" />
+      <workItem from="1701684779328" duration="7142000" />
+      <workItem from="1701787695041" duration="632000" />
+      <workItem from="1702659428654" duration="120000" />
+      <workItem from="1703347619089" duration="10681000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -217,6 +228,10 @@
     <MESSAGE value="feat: add Education section" />
     <MESSAGE value="feat: add Education section and affichage in hom" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: add Education section and affichage in hom" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PortfolioVault_V2$GlassFish_7_0_8.ic" NAME="GlassFish 7.0.8 Coverage Results" MODIFIED="1698050762258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

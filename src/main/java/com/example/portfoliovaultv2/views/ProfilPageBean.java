@@ -1,6 +1,7 @@
 
 package com.example.portfoliovaultv2.views;
 
+import com.example.portfoliovaultv2.activeMQ.SimpleQueue;
 import com.example.portfoliovaultv2.models.Education;
 import com.example.portfoliovaultv2.models.Experience;
 import com.example.portfoliovaultv2.models.User;
@@ -38,8 +39,14 @@ public class ProfilPageBean implements Serializable {
     private String professionalTitle;
     private LinkedList<Experience> experiences = new LinkedList<>();
     private LinkedList<Education> educations = new LinkedList<>();
+    private static final String QUEUE_NAME = "pendingPostulat";
 
+    public  void send() throws Exception {
 
+        SimpleQueue queue = new SimpleQueue(QUEUE_NAME);
+        queue.send("je vais postuler pour cette offre");
+        queue.close();
+    }
     public void getUser() {
         // Initialize properties using values from UserSessionBean
         User user = userServiceEJB.findUserByEmail(userSession.getEmail());
