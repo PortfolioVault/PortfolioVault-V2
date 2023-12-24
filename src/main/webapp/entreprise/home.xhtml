@@ -11,15 +11,37 @@
     <h:body>
         <h:form>
             <div class="section-container">
-                <h:outputLabel value="Welcome to the Home Page" styleClass="home-header"/>
-                <h:dataTable value="#{entrepriseBeans.receivedMessages}" var="postulat" styleClass="application-table">
+            <h:dataTable value="#{entrepriseBeans.receivedMessages}" var="postulat" styleClass="application-table">
                     <h:column>
                         <f:facet name="header">Received Messages</f:facet>
-                        <ui:repeat value="#{postulat}" var="message">
-                            <h:outputText value="#{message}" /><br/>
-                        </ui:repeat>
+<!--                        <ui:repeat value="#{postulat}" var="message">-->
+<!--                            <h:outputText value="#{message}" /><br/>-->
+<!--                        </ui:repeat>-->
+                        <h:outputText value="Nom: #{postulat[0]}" /><br/>
+                        <h:outputText value="Prénom: #{postulat[1]}" /><br/>
+                        <!-- Vous pouvez ajouter d'autres informations ici -->
+                        <h:outputLink value="#" onclick="openPDF('#{message}')" style="cursor: pointer; text-decoration: underline;">Ouvrir le PDF</h:outputLink>
                     </h:column>
                 </h:dataTable>
+                <!-- Ajoutez cette fonction JavaScript pour ouvrir le PDF -->
+                <h:outputScript>
+    <![CDATA[
+        function openPDF(pdfBytes) {
+            // Convertir la chaîne de bytes en tableau d'octets
+            var fileBytes = atob(pdfBytes);
+
+            // Créer un objet Blob à partir du tableau d'octets
+            var blob = new Blob([new Uint8Array(fileBytes)], { type: 'application/pdf' });
+
+            // Créer une URL de données pour le Blob
+            var blobUrl = URL.createObjectURL(blob);
+
+            // Ouvrir le PDF dans un nouvel onglet
+            window.open(blobUrl, '_blank');
+        }
+    ]]>
+</h:outputScript>
+
 
             </div>
         </h:form>

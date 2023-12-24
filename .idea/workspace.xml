@@ -9,19 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: transformed user service to EJB">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/activeMQ/SimpleQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/entreprise/entrepriseBeans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/home.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/login.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/signup.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3722d00a-e16d-4d24-9f76-2f213ca20921" name="Changes" comment="feat: jmsinit">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/public/DeployingMERNapplication.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/public/pdf_4726010.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/models/Education.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/activeMQ/SimpleQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/activeMQ/SimpleQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/ProfilPageBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/profil.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/entreprise/entrepriseBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/portfoliovaultv2/views/entreprise/entrepriseBeans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/entreprise/home.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/entreprise/home.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +70,9 @@
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\views" />
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\webapp" />
       <recent name="C:\Users\Zakaria\IdeaProjects\PortfolioVault-V2\src\main\java\com\example\portfoliovaultv2\models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\S5\benHaddy\fatiPortFV2\PortfolioVault-V2\src\main\webapp\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -173,7 +171,7 @@
       <workItem from="1701684779328" duration="7142000" />
       <workItem from="1701787695041" duration="632000" />
       <workItem from="1702659428654" duration="120000" />
-      <workItem from="1703347619089" duration="10681000" />
+      <workItem from="1703347619089" duration="24175000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -205,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698012769539</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: jmsinit">
+      <created>1703413680419</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703413680419</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +232,8 @@
     <MESSAGE value="feat: transformed user service to EJB" />
     <MESSAGE value="feat: add Education section" />
     <MESSAGE value="feat: add Education section and affichage in hom" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Education section and affichage in hom" />
+    <MESSAGE value="feat: jmsinit" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: jmsinit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

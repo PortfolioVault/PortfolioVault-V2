@@ -2,17 +2,8 @@ package com.example.portfoliovaultv2.activeMQ;
 
 
 import static jakarta.jms.Session.AUTO_ACKNOWLEDGE;
-import static org.apache.activemq.ActiveMQConnection.DEFAULT_BROKER_URL;
 
-import jakarta.jms.Connection;
-import jakarta.jms.ConnectionFactory;
-import jakarta.jms.Destination;
-import jakarta.jms.JMSException;
-import jakarta.jms.Message;
-import jakarta.jms.MessageConsumer;
-import jakarta.jms.MessageProducer;
-import jakarta.jms.Session;
-import jakarta.jms.TextMessage;
+import jakarta.jms.*;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -52,27 +43,44 @@ public class SimpleQueue {
         consumer = session.createConsumer(destination);
     }
 
-    public void send(String textMessage)
-            throws Exception {
-        // We will send a text message
-        TextMessage message = session.createTextMessage(textMessage);
-        // push the message into queue
+    public void send(byte[] fileBytes) throws Exception {
+        // Créez un message de type BytesMessage
+        BytesMessage message = session.createBytesMessage();
+
+        // Ajoutez les octets du fichier au message
+        message.writeBytes(fileBytes);
+
+        // Envoyez le message dans la file d'attente
         producer.send(message);
-        System.out.printf("ton postulat est envoyer \n", message, queueName);
+
+        System.out.println("Le fichier a été envoyé avec succès à la file d'attente."+message);
     }
 
-    public String receive() throws Exception {
-        // receive the message from the queue.
-        Message message = consumer.receive();
-        // Since We are using TestMessage in our example. MessageProducer sent us a TextMessage
-        // So we need cast to it to get access to its getText() method which will give us the text of the message
-        if (message instanceof TextMessage) {
-            TextMessage textMessage = (TextMessage) message;
-            System.out.printf("Received message '%s' from the queue '%s' running on local JMS Server.\n", textMessage.getText(), queueName);
-            return textMessage.getText();
+    public byte[] receive() {
+        try {
+            // Réception du message de la file d'attente
+            Message message = consumer.receive();
+
+            if (message instanceof BytesMessage) {
+                BytesMessage bytesMessage = (BytesMessage) message;
+
+                // Lire les octets du message
+                byte[] fileBytes = new byte[(int) bytesMessage.getBodyLength()];
+                bytesMessage.readBytes(fileBytes);
+
+                System.out.println("Received file with " + fileBytes.length + " bytes.");
+
+                return fileBytes;
+            } else {
+                System.out.println("Received a message that is not a BytesMessage.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace(); // Gérer les erreurs correctement dans un environnement de production
         }
-        return message.toString();
+
+        return null;
     }
+
 
     public void close() throws JMSException {
         producer.close();
